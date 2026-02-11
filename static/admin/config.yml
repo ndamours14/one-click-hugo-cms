@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main
+  
+media_folder: "static/images"
+public_folder: "/images"
+
+collections:
+  - name: "usecases"
+    label: "Use Cases"
+    folder: "content/usecases"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
